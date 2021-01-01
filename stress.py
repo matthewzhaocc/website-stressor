@@ -8,7 +8,8 @@ import requests
 
 # send a request
 def send_request(url):
-    requests.get(url)
+    while True:
+        requests.get(url)
 
 if __name__ == "__main__":
     conn_pool = []
